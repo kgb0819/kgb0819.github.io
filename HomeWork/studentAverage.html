@@ -19,12 +19,12 @@
     }
         
     var studentNumber = window.prompt("학생수 입력:");
-    studentNumber = parseFloat(studentNumber);
+    studentNumber = parseInt(studentNumber);
     var student[studentNumber];
     var score;
     for(var i=0;i<studentNumber;i++){
      score = window.prompt("점수 입력:");
-     score = parseInt(score);
+     score = parseFloat(score);
      student[i] = score;
     }
     var average = Average(student);
