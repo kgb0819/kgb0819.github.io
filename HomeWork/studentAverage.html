@@ -1,3 +1,4 @@
+
 <!doctype html> <!-- /src/studentAverage.html -->
 <html lang="ko">
   <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -22,12 +23,22 @@
     var studentNumber = window.prompt("학생수를 입력하시오");
     studentNumber = parseInt(studentNumber);
     var student=new Array();
-    var score;
-    for(var i=0;i<studentNumber;i++)
+    var score=0;
+    var i=0
+    while((score>=0 && score<=100) && i<studentNumber)
     {
-     score = window.prompt("학생의 점수를 입력하시오");
+     score = window.prompt("점수를 입력하시오(0점과 100점 사이) "+"[총학생수 : "+studentNumber+", 입력한 학생수 : "+i+"]");
      score = parseFloat(score);
-     student[i] = score;
+     if(score>=0 && score<=100)
+     {
+       student[i] = score;
+       i++;
+     }
+     else
+     {
+       alert("0점과 100점 사이를 입력하시오");
+       score = 0;
+     }
     }
     var average = Average(student);
     document.write("학생수 = ",studentNumber,"<br/>")
