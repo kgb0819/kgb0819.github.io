@@ -1,0 +1,14 @@
+<!doctype html> <!-- delete_data.html-->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+    <title>delete_data</title>
+  </head>
+  <body>
+    <h1 id="aList">10주차 실습(delete_data)</h1>
+    <p><a href="http://203.237.142.245/~s20141469/week10/delete_data.jsp">delete_data URL</a></p>
+    <p><img src="../20191107/delete_data code.PNG"alt="화면"/></p>
+    <p><img src="../20191107/delete_data result.PNG"alt="화면"/></p>
+  </body>
+</html>
